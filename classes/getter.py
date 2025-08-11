@@ -5,7 +5,7 @@
 # initialiZer <constrocture>
 # self key what it is :<this>
 
-from datetime import date
+from datetime import datetime
 from time import time
 
 
@@ -19,7 +19,7 @@ class Human():
     def __init__(self,gender,name):
         print("The initializer wass called")
         self.gender=gender
-        self.name=name
+        self._name=name
         if self.gender=="Male":
             self.ribs=24
             self.curse="Suffer"
